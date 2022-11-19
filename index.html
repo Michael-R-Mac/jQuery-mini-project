@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>To do list app</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+	integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+	crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+	<div class="container">
+		<h1>To Do List App</h1>
+		<p><em> Click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
+
+		<form name="toDoList">
+			<label for="input">
+				<input type="text" name="ListItem" id="input">
+			</label>
+		</form>
+
+		<div onclick="newItem()" id="button">Add</div>
+		<br>
+		<ol id="list"></ol>
+	</div>
+	<script
+	src="https://code.jquery.com/jquery-3.5.1.js"
+	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
+	<script
+	src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+	integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+	crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/tota11y.min.js"></script>
+</body>
+</html>
